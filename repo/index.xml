@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fdroid>
+	<repo icon="icon.png" name="Sivivatu Apps" pubkey="308205253082030da00302010202080ddf912cb4ee92db300d06092a864886f70d01010c050030403111300f060355040a13085369766976617475312b30290603550403132242617474657279204d6f6e69746f7220462d44726f6964205265706f7369746f72793020170d3236313032393231323934315a180f32303534303331363231323934315a30403111300f060355040a13085369766976617475312b30290603550403132242617474657279204d6f6e69746f7220462d44726f6964205265706f7369746f727930820222300d06092a864886f70d01010105000382020f003082020a0282020100b72c330d6da51edde41a0ff11d598a4ed4b22d5321d13590ff6c2ec7b488fdc9d923fd1486da7cabac25f26601cc61b1b207cdd8263b9d424a8b3b7bd1b7ef48e65e4060432f86ce019272c58b47de6e52c887573f5a9276f7de75be5cb49e6ec7de6be8b95c2a0ee0c37309f8aafd0530367c6c6dbc48c8949e3c8a3af644c6e013d57be1a51c79d938616e6f2e1224a526ee9c3928e442198ef44ebd188933dd29eedd853e0a6484bf5b79cec29ffcb9276986ce07ac4f45086ba2fe0e94c89f011f554b937f412b7af12e4025103b1433c1de7dd7816e9164afe24db53b9b920e924e3a8a43b09e8aa61ac5bd2388f340cf7cd7002868b3b5f16c7b8b96330fc531e1f02bad616d8bb95f56eed113cce1bda9eeca0647afde50112cfec758402f96de66812c639d264fcbdb29124a25fb7c8c9a4c125991f69f69bf2656d196aed04f0df10693d6f93f0ad8ab8e6838fa6d45c54507c5da61d11e7666aff9f68e38e6c7c8dddeaaed7ea00fab4a25572ba925ebd97196052524c7debe9afadf9d2238d503a99824cf85fae3c58959fbf58c80c3b2c662a9584c28b2ef6a51444ae5cdcf131b882a261e28bf91699bc73f2fae792dfc793a0cacd50041d219a9fe8e3bd8c5cea8607f62bf9655537f0affcb46ccb30195e45798818a61e0f50e2ed794dec1437186773a88109c4f9979a908e9c836d3bc487ebd759dd00d6d0203010001a321301f301d0603551d0e041604145531ee71ca91b422a5967bf14332bc48bf14104f300d06092a864886f70d01010c0500038202010065471a862864ceafd7118c688813a7629554b47768a5730bc57a89a5be4915816b37f89b26b02766a7c0eb26de2e8b263a9aa495906648183f0576b50e1e799413a1d112fb7a074ab81cbff9c75339dbf7a638c81cb953f9d8ecd834bf976bcd72dfc0ac42745c62d45e8ab0d2d7ae3538f541644a93c6a51b66e9eabc221227fc9842881719bfa85959417a4e84e0061fc35ab92652a64762dd303971746b4928e3b43491d26e697d7610c7845e2e395719801b25e2cf87dc161649e4709d1be98cb9f2a4bce6fe53a5a7927a96927f71fd12d7fd6212eb8f4ed8975087c84e28652725ad8a62a7b67d49ee044b0d98eb10155b0790ce7a2ba347cfa5dcd628818c45462959aba6430361539d28916a125ca7d5e44466ff618e6daff535627c9addb0ed287d958274c944cc36dec8b3573b1b9665f3e84efb339c294f1ac7df3f6dc0419215ee1f6b3c1392df861df88d46f4e8d3644bee3cc8005712da1250e83264288a93397d494906772a26d9d6ac1b19b3dead383567ecd854e91394e0769a4bf781d41042f6a7685d4b971b008a19f0b997726e909a467ecfef4936e5c20dd82b68a7ffee7bc92d1e8c438e33ac79b55446b06d1eed5e196be5b80f653da60bcae708c759313658029d08bf8bf79bdf581444fb91e591c8c045b65d2a1edb38e5efe1f9cfd8a9ba6ec1dea4729110109e2ed65bed63802d78a2f9d152" timestamp="1793998095" url="https://sivivatu.github.io/fdroid/repo" version="20002">
+		<description>Developer-operated Android apps and public betas.</description>
+	</repo>
+	<application id="io.github.sivivatu.batterymonitor">
+		<id>io.github.sivivatu.batterymonitor</id>
+		<added>2026-10-29</added>
+		<lastupdated>2026-11-06</lastupdated>
+		<name>Battery Monitor Beta</name>
+		<summary>Local battery estimates and app usage history</summary>
+		<desc>Battery Monitor shows Android's per-app charge estimates, available
+foreground/background estimates, wakelocks and the system battery timeline.
+It keeps validated usage history on your device, without ads, accounts or
+telemetry. Android 14 or later is required.
+
+The History tab shows saved 1-, 7- and 30-day usage and daily app estimates
+across charging sessions. Tap a dated bar for its value. Enable Automatic
+history or use Capture now to collect readings; missing days stay unknown.
+Notification permission is required only for alerts, not local history.
+Network permission is used only for temporary ADB setup on this device.
+
+Guided on-device ADB setup grants diagnostic permissions without a computer
+or separate Shizuku installation. Keep Android Settings and the app visible
+in split screen while pairing. ADB disconnects after setup; Wireless debugging
+can then be turned off. Computer ADB and Shizuku remain alternatives.
+
+This early public beta is an independent GPLv3-or-later Wattdog fork;
+estimates and physical-device
+behavior still need validation. Uninstalling removes saved history.
+
+Setup and limitations: https://github.com/Sivivatu/battery-monitor#install-and-enable-collection
+</desc>
+		<license>GPL-3.0-or-later</license>
+		<categories>System</categories>
+		<category>System</category>
+		<web>https://github.com/Sivivatu/battery-monitor</web>
+		<source>https://github.com/Sivivatu/battery-monitor</source>
+		<tracker>https://github.com/Sivivatu/battery-monitor/issues</tracker>
+		<author>Sivivatu and Wattdog contributors</author>
+		<marketversion>0.1.0-beta.4</marketversion>
+		<marketvercode>6</marketvercode>
+		<package>
+			<version>0.1.0-beta.4</version>
+			<versioncode>6</versioncode>
+			<apkname>io.github.sivivatu.batterymonitor_6.apk</apkname>
+			<hash type="sha256">c92add54be10cf1386ce7b146ef9566c4587ed17f370cae561e922aacb0a0489</hash>
+			<size>15460516</size>
+			<sdkver>34</sdkver>
+			<targetSdkVersion>37</targetSdkVersion>
+			<added>2026-11-06</added>
+			<sig>71664a896365b1eaa0232ff7d439abff</sig>
+			<permissions>ACCESS_NETWORK_STATE,BATTERY_STATS,DUMP,FOREGROUND_SERVICE,INTERNET,PACKAGE_USAGE_STATS,POST_NOTIFICATIONS,QUERY_ALL_PACKAGES,READ_EXTERNAL_STORAGE,READ_PHONE_STATE,RECEIVE_BOOT_COMPLETED,WAKE_LOCK,WRITE_EXTERNAL_STORAGE,io.github.sivivatu.batterymonitor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION,moe.shizuku.manager.permission.API_V23</permissions>
+			<nativecode>arm64-v8a,armeabi-v7a,x86,x86_64</nativecode>
+		</package>
+		<package>
+			<version>0.1.0-beta.3</version>
+			<versioncode>5</versioncode>
+			<apkname>io.github.sivivatu.batterymonitor_5.apk</apkname>
+			<hash type="sha256">e23fbbb5a710a38106835bdbcb5fa433c674d962696bfe554790d17cb161ef46</hash>
+			<size>15444132</size>
+			<sdkver>34</sdkver>
+			<targetSdkVersion>37</targetSdkVersion>
+			<added>2026-11-04</added>
+			<sig>71664a896365b1eaa0232ff7d439abff</sig>
+			<permissions>ACCESS_NETWORK_STATE,BATTERY_STATS,DUMP,FOREGROUND_SERVICE,INTERNET,PACKAGE_USAGE_STATS,POST_NOTIFICATIONS,QUERY_ALL_PACKAGES,READ_EXTERNAL_STORAGE,READ_PHONE_STATE,RECEIVE_BOOT_COMPLETED,WAKE_LOCK,WRITE_EXTERNAL_STORAGE,io.github.sivivatu.batterymonitor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION,moe.shizuku.manager.permission.API_V23</permissions>
+			<nativecode>arm64-v8a,armeabi-v7a,x86,x86_64</nativecode>
+		</package>
+		<package>
+			<version>0.1.0-beta.1</version>
+			<versioncode>2</versioncode>
+			<apkname>io.github.sivivatu.batterymonitor_2.apk</apkname>
+			<hash type="sha256">a8184b7fd570cbea73a1ceb9ee64530e4a57e8063b85da6423aacde1317f1bed</hash>
+			<size>2904879</size>
+			<sdkver>34</sdkver>
+			<targetSdkVersion>37</targetSdkVersion>
+			<added>2026-10-29</added>
+			<sig>71664a896365b1eaa0232ff7d439abff</sig>
+			<permissions>ACCESS_NETWORK_STATE,BATTERY_STATS,DUMP,FOREGROUND_SERVICE,PACKAGE_USAGE_STATS,POST_NOTIFICATIONS,QUERY_ALL_PACKAGES,RECEIVE_BOOT_COMPLETED,WAKE_LOCK,io.github.sivivatu.batterymonitor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION,moe.shizuku.manager.permission.API_V23</permissions>
+			<nativecode>arm64-v8a,armeabi-v7a,x86,x86_64</nativecode>
+		</package>
+	</application>
+	<application id="com.wilderguard.game.beta">
+		<id>com.wilderguard.game.beta</id>
+		<added>2026-10-31</added>
+		<lastupdated>2026-11-06</lastupdated>
+		<name>Wilderguard Beta</name>
+		<summary>Eric's tower defense adventure</summary>
+		<desc>Made by Eric, a 7-year-old boy.
+
+Defend Elderglen across five regions and 25 monster waves. Build Archer,
+Cannon, and Frost towers, upgrade your defenses, and earn diamonds and spells.
+Send soldiers from towers, train them separately and recover diamonds for
+each survivor. Defend five distinct pixel-photo environments and roads.
+Confirm purchases and play offline with compact landscape touch controls.
+Watch castle and tower health, repair damaged towers and counter ranged
+axe-throwing orcs with soldiers. Fullscreen controls adapt to your device.
+
+Frost towers prefer unchilled enemies. Chill chance improves from 35% at
+level 1 to 50% at level 2 and 85% at level 3.
+
+Every tower pad has useful road coverage, including central Frostfall Pass.
+
+This is an early beta in a developer-operated custom F-Droid repository.
+There are no accounts, advertising, tracking, or in-app purchases.
+Saved progress stays on the device. The beta installs separately from the
+original debug preview and does not import that preview's saved progress.
+</desc>
+		<license>Unknown</license>
+		<categories>Games</categories>
+		<category>Games</category>
+		<web></web>
+		<source></source>
+		<tracker></tracker>
+		<author>Eric</author>
+		<marketversion>0.1.0-beta.9</marketversion>
+		<marketvercode>9</marketvercode>
+		<package>
+			<version>0.1.0-beta.9</version>
+			<versioncode>9</versioncode>
+			<apkname>com.wilderguard.game.beta_9.apk</apkname>
+			<hash type="sha256">286e4d73d783ab36565293585215977ab4a31941d241acf50cd5eae3e16662fe</hash>
+			<size>5172806</size>
+			<sdkver>22</sdkver>
+			<targetSdkVersion>34</targetSdkVersion>
+			<added>2026-11-06</added>
+			<sig>0c5d33745cde5f96d7759869cf0bc239</sig>
+			<permissions>INTERNET,com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
+		</package>
+		<package>
+			<version>0.1.0-beta.8</version>
+			<versioncode>8</versioncode>
+			<apkname>com.wilderguard.game.beta_8.apk</apkname>
+			<hash type="sha256">1d6dbe788758dce5190b557c3eb1e665a565d89993d90c1c320f699d6d11d03a</hash>
+			<size>5172806</size>
+			<sdkver>22</sdkver>
+			<targetSdkVersion>34</targetSdkVersion>
+			<added>2026-11-05</added>
+			<sig>0c5d33745cde5f96d7759869cf0bc239</sig>
+			<permissions>INTERNET,com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
+		</package>
+		<package>
+			<version>0.1.0-beta.7</version>
+			<versioncode>7</versioncode>
+			<apkname>com.wilderguard.game.beta_7.apk</apkname>
+			<hash type="sha256">0beb929a7ffcc352fa075d8ed68e404cf96b9f56a050e563307e0f576e19a901</hash>
+			<size>5172806</size>
+			<sdkver>22</sdkver>
+			<targetSdkVersion>34</targetSdkVersion>
+			<added>2026-11-05</added>
+			<sig>0c5d33745cde5f96d7759869cf0bc239</sig>
+			<permissions>INTERNET,com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
+		</package>
+		<package>
+			<version>0.1.0-beta.6</version>
+			<versioncode>6</versioncode>
+			<apkname>com.wilderguard.game.beta_6.apk</apkname>
+			<hash type="sha256">774734eec76e23e477a5fe60b883d2744a1726c72f427c010a9ea30dfced21a2</hash>
+			<size>5172806</size>
+			<sdkver>22</sdkver>
+			<targetSdkVersion>34</targetSdkVersion>
+			<added>2026-11-05</added>
+			<sig>0c5d33745cde5f96d7759869cf0bc239</sig>
+			<permissions>INTERNET,com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
+		</package>
+		<package>
+			<version>0.1.0-beta.5</version>
+			<versioncode>5</versioncode>
+			<apkname>com.wilderguard.game.beta_5.apk</apkname>
+			<hash type="sha256">a3dfab70311d70eb8460ccb568f9c41ad417ea4d05984691ed52a135ffa50fef</hash>
+			<size>5115371</size>
+			<sdkver>22</sdkver>
+			<targetSdkVersion>34</targetSdkVersion>
+			<added>2026-11-04</added>
+			<sig>0c5d33745cde5f96d7759869cf0bc239</sig>
+			<permissions>INTERNET,com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
+		</package>
+		<package>
+			<version>0.1.0-beta.4</version>
+			<versioncode>4</versioncode>
+			<apkname>com.wilderguard.game.beta_4.apk</apkname>
+			<hash type="sha256">ea2847869678139709399e1800f74b49b81a359f0199c0fc77096739b14acf86</hash>
+			<size>3406849</size>
+			<sdkver>22</sdkver>
+			<targetSdkVersion>34</targetSdkVersion>
+			<added>2026-11-01</added>
+			<sig>0c5d33745cde5f96d7759869cf0bc239</sig>
+			<permissions>INTERNET,com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
+		</package>
+		<package>
+			<version>0.1.0-beta.3</version>
+			<versioncode>3</versioncode>
+			<apkname>com.wilderguard.game.beta_3.apk</apkname>
+			<hash type="sha256">c2206dcf7d206aaab70715212b5afd3fea7268e366bb88d079f2d5d7157eecde</hash>
+			<size>3406849</size>
+			<sdkver>22</sdkver>
+			<targetSdkVersion>34</targetSdkVersion>
+			<added>2026-11-01</added>
+			<sig>0c5d33745cde5f96d7759869cf0bc239</sig>
+			<permissions>INTERNET,com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
+		</package>
+		<package>
+			<version>0.1.0-beta.2</version>
+			<versioncode>2</versioncode>
+			<apkname>com.wilderguard.game.beta_2.apk</apkname>
+			<hash type="sha256">8168b78ecfecb76248ef3b4b6bfcc1c6948dc28f52b1ad44d9b7724612985d4d</hash>
+			<size>3406849</size>
+			<sdkver>22</sdkver>
+			<targetSdkVersion>34</targetSdkVersion>
+			<added>2026-11-01</added>
+			<sig>0c5d33745cde5f96d7759869cf0bc239</sig>
+			<permissions>INTERNET,com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
+		</package>
+		<package>
+			<version>0.1.0-beta.1</version>
+			<versioncode>1</versioncode>
+			<apkname>com.wilderguard.game.beta_1.apk</apkname>
+			<hash type="sha256">17a2f6e1bc08e065b4addeac48a80aeb6be1d3ca0d64de38cb7b7f58d0a09876</hash>
+			<size>3271407</size>
+			<sdkver>22</sdkver>
+			<targetSdkVersion>34</targetSdkVersion>
+			<added>2026-10-31</added>
+			<sig>0c5d33745cde5f96d7759869cf0bc239</sig>
+			<permissions>INTERNET,com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
+		</package>
+	</application>
+</fdroid>

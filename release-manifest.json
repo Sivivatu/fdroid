@@ -1,0 +1,98 @@
+[
+  {
+    "package": "com.wilderguard.game.beta",
+    "versionCode": 1,
+    "versionName": "0.1.0-beta.1",
+    "apkName": "com.wilderguard.game.beta_1.apk",
+    "sha256": "17a2f6e1bc08e065b4addeac48a80aeb6be1d3ca0d64de38cb7b7f58d0a09876",
+    "addedAt": 1793441043
+  },
+  {
+    "package": "com.wilderguard.game.beta",
+    "versionCode": 2,
+    "versionName": "0.1.0-beta.2",
+    "apkName": "com.wilderguard.game.beta_2.apk",
+    "sha256": "8168b78ecfecb76248ef3b4b6bfcc1c6948dc28f52b1ad44d9b7724612985d4d",
+    "addedAt": 1793529451
+  },
+  {
+    "package": "com.wilderguard.game.beta",
+    "versionCode": 3,
+    "versionName": "0.1.0-beta.3",
+    "apkName": "com.wilderguard.game.beta_3.apk",
+    "sha256": "c2206dcf7d206aaab70715212b5afd3fea7268e366bb88d079f2d5d7157eecde",
+    "addedAt": 1793541441
+  },
+  {
+    "package": "com.wilderguard.game.beta",
+    "versionCode": 4,
+    "versionName": "0.1.0-beta.4",
+    "apkName": "com.wilderguard.game.beta_4.apk",
+    "sha256": "ea2847869678139709399e1800f74b49b81a359f0199c0fc77096739b14acf86",
+    "addedAt": 1793546437
+  },
+  {
+    "package": "com.wilderguard.game.beta",
+    "versionCode": 5,
+    "versionName": "0.1.0-beta.5",
+    "apkName": "com.wilderguard.game.beta_5.apk",
+    "sha256": "a3dfab70311d70eb8460ccb568f9c41ad417ea4d05984691ed52a135ffa50fef",
+    "addedAt": 1793785049
+  },
+  {
+    "package": "com.wilderguard.game.beta",
+    "versionCode": 6,
+    "versionName": "0.1.0-beta.6",
+    "apkName": "com.wilderguard.game.beta_6.apk",
+    "sha256": "774734eec76e23e477a5fe60b883d2744a1726c72f427c010a9ea30dfced21a2",
+    "addedAt": 1793879058
+  },
+  {
+    "package": "com.wilderguard.game.beta",
+    "versionCode": 7,
+    "versionName": "0.1.0-beta.7",
+    "apkName": "com.wilderguard.game.beta_7.apk",
+    "sha256": "0beb929a7ffcc352fa075d8ed68e404cf96b9f56a050e563307e0f576e19a901",
+    "addedAt": 1793880111
+  },
+  {
+    "package": "com.wilderguard.game.beta",
+    "versionCode": 8,
+    "versionName": "0.1.0-beta.8",
+    "apkName": "com.wilderguard.game.beta_8.apk",
+    "sha256": "1d6dbe788758dce5190b557c3eb1e665a565d89993d90c1c320f699d6d11d03a",
+    "addedAt": 1793897013
+  },
+  {
+    "package": "com.wilderguard.game.beta",
+    "versionCode": 9,
+    "versionName": "0.1.0-beta.9",
+    "apkName": "com.wilderguard.game.beta_9.apk",
+    "sha256": "286e4d73d783ab36565293585215977ab4a31941d241acf50cd5eae3e16662fe",
+    "addedAt": 1793966092
+  },
+  {
+    "package": "io.github.sivivatu.batterymonitor",
+    "versionCode": 2,
+    "versionName": "0.1.0-beta.1",
+    "apkName": "io.github.sivivatu.batterymonitor_2.apk",
+    "sha256": "a8184b7fd570cbea73a1ceb9ee64530e4a57e8063b85da6423aacde1317f1bed",
+    "addedAt": 1793312484
+  },
+  {
+    "package": "io.github.sivivatu.batterymonitor",
+    "versionCode": 5,
+    "versionName": "0.1.0-beta.3",
+    "apkName": "io.github.sivivatu.batterymonitor_5.apk",
+    "sha256": "e23fbbb5a710a38106835bdbcb5fa433c674d962696bfe554790d17cb161ef46",
+    "addedAt": 1793788243
+  },
+  {
+    "package": "io.github.sivivatu.batterymonitor",
+    "versionCode": 6,
+    "versionName": "0.1.0-beta.4",
+    "apkName": "io.github.sivivatu.batterymonitor_6.apk",
+    "sha256": "c92add54be10cf1386ce7b146ef9566c4587ed17f370cae561e922aacb0a0489",
+    "addedAt": 1793976677
+  }
+]

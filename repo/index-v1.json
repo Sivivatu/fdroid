@@ -1,0 +1,501 @@
+{
+  "repo": {
+    "timestamp": 1793998095000,
+    "version": 20002,
+    "name": "Sivivatu Apps",
+    "icon": "icon.png",
+    "address": "https://sivivatu.github.io/fdroid/repo",
+    "description": "Developer-operated Android apps and public betas."
+  },
+  "requests": {
+    "install": [],
+    "uninstall": []
+  },
+  "apps": [
+    {
+      "authorName": "Sivivatu and Wattdog contributors",
+      "categories": [
+        "System"
+      ],
+      "suggestedVersionName": "0.1.0-beta.4",
+      "suggestedVersionCode": "6",
+      "description": "Battery Monitor shows Android's per-app charge estimates, available\nforeground/background estimates, wakelocks and the system battery timeline.\nIt keeps validated usage history on your device, without ads, accounts or\ntelemetry. Android 14 or later is required.\n\nThe History tab shows saved 1-, 7- and 30-day usage and daily app estimates\nacross charging sessions. Tap a dated bar for its value. Enable Automatic\nhistory or use Capture now to collect readings; missing days stay unknown.\nNotification permission is required only for alerts, not local history.\nNetwork permission is used only for temporary ADB setup on this device.\n\nGuided on-device ADB setup grants diagnostic permissions without a computer\nor separate Shizuku installation. Keep Android Settings and the app visible\nin split screen while pairing. ADB disconnects after setup; Wireless debugging\ncan then be turned off. Computer ADB and Shizuku remain alternatives.\n\nThis early public beta is an independent GPLv3-or-later Wattdog fork;\nestimates and physical-device\nbehavior still need validation. Uninstalling removes saved history.\n\nSetup and limitations: https://github.com/Sivivatu/battery-monitor#install-and-enable-collection\n",
+      "issueTracker": "https://github.com/Sivivatu/battery-monitor/issues",
+      "license": "GPL-3.0-or-later",
+      "name": "Battery Monitor Beta",
+      "sourceCode": "https://github.com/Sivivatu/battery-monitor",
+      "summary": "Local battery estimates and app usage history",
+      "webSite": "https://github.com/Sivivatu/battery-monitor",
+      "added": 1793312484000,
+      "packageName": "io.github.sivivatu.batterymonitor",
+      "lastUpdated": 1793976677000
+    },
+    {
+      "authorName": "Eric",
+      "categories": [
+        "Games"
+      ],
+      "suggestedVersionName": "0.1.0-beta.9",
+      "suggestedVersionCode": "9",
+      "description": "Made by Eric, a 7-year-old boy.\n\nDefend Elderglen across five regions and 25 monster waves. Build Archer,\nCannon, and Frost towers, upgrade your defenses, and earn diamonds and spells.\nSend soldiers from towers, train them separately and recover diamonds for\neach survivor. Defend five distinct pixel-photo environments and roads.\nConfirm purchases and play offline with compact landscape touch controls.\nWatch castle and tower health, repair damaged towers and counter ranged\naxe-throwing orcs with soldiers. Fullscreen controls adapt to your device.\n\nFrost towers prefer unchilled enemies. Chill chance improves from 35% at\nlevel 1 to 50% at level 2 and 85% at level 3.\n\nEvery tower pad has useful road coverage, including central Frostfall Pass.\n\nThis is an early beta in a developer-operated custom F-Droid repository.\nThere are no accounts, advertising, tracking, or in-app purchases.\nSaved progress stays on the device. The beta installs separately from the\noriginal debug preview and does not import that preview's saved progress.\n",
+      "license": "Unknown",
+      "name": "Wilderguard Beta",
+      "summary": "Eric's tower defense adventure",
+      "added": 1793441043000,
+      "packageName": "com.wilderguard.game.beta",
+      "lastUpdated": 1793966092000
+    }
+  ],
+  "packages": {
+    "com.wilderguard.game.beta": [
+      {
+        "added": 1793966092000,
+        "apkName": "com.wilderguard.game.beta_9.apk",
+        "hash": "286e4d73d783ab36565293585215977ab4a31941d241acf50cd5eae3e16662fe",
+        "hashType": "sha256",
+        "minSdkVersion": 22,
+        "packageName": "com.wilderguard.game.beta",
+        "sig": "0c5d33745cde5f96d7759869cf0bc239",
+        "signer": "f50b3059b4cc987036cc3738ea8b87c3058d00ae3f0f07a51ba80a0555f2e138",
+        "size": 5172806,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 9,
+        "versionName": "0.1.0-beta.9"
+      },
+      {
+        "added": 1793897013000,
+        "apkName": "com.wilderguard.game.beta_8.apk",
+        "hash": "1d6dbe788758dce5190b557c3eb1e665a565d89993d90c1c320f699d6d11d03a",
+        "hashType": "sha256",
+        "minSdkVersion": 22,
+        "packageName": "com.wilderguard.game.beta",
+        "sig": "0c5d33745cde5f96d7759869cf0bc239",
+        "signer": "f50b3059b4cc987036cc3738ea8b87c3058d00ae3f0f07a51ba80a0555f2e138",
+        "size": 5172806,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 8,
+        "versionName": "0.1.0-beta.8"
+      },
+      {
+        "added": 1793880111000,
+        "apkName": "com.wilderguard.game.beta_7.apk",
+        "hash": "0beb929a7ffcc352fa075d8ed68e404cf96b9f56a050e563307e0f576e19a901",
+        "hashType": "sha256",
+        "minSdkVersion": 22,
+        "packageName": "com.wilderguard.game.beta",
+        "sig": "0c5d33745cde5f96d7759869cf0bc239",
+        "signer": "f50b3059b4cc987036cc3738ea8b87c3058d00ae3f0f07a51ba80a0555f2e138",
+        "size": 5172806,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 7,
+        "versionName": "0.1.0-beta.7"
+      },
+      {
+        "added": 1793879058000,
+        "apkName": "com.wilderguard.game.beta_6.apk",
+        "hash": "774734eec76e23e477a5fe60b883d2744a1726c72f427c010a9ea30dfced21a2",
+        "hashType": "sha256",
+        "minSdkVersion": 22,
+        "packageName": "com.wilderguard.game.beta",
+        "sig": "0c5d33745cde5f96d7759869cf0bc239",
+        "signer": "f50b3059b4cc987036cc3738ea8b87c3058d00ae3f0f07a51ba80a0555f2e138",
+        "size": 5172806,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 6,
+        "versionName": "0.1.0-beta.6"
+      },
+      {
+        "added": 1793785049000,
+        "apkName": "com.wilderguard.game.beta_5.apk",
+        "hash": "a3dfab70311d70eb8460ccb568f9c41ad417ea4d05984691ed52a135ffa50fef",
+        "hashType": "sha256",
+        "minSdkVersion": 22,
+        "packageName": "com.wilderguard.game.beta",
+        "sig": "0c5d33745cde5f96d7759869cf0bc239",
+        "signer": "f50b3059b4cc987036cc3738ea8b87c3058d00ae3f0f07a51ba80a0555f2e138",
+        "size": 5115371,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 5,
+        "versionName": "0.1.0-beta.5"
+      },
+      {
+        "added": 1793546437000,
+        "apkName": "com.wilderguard.game.beta_4.apk",
+        "hash": "ea2847869678139709399e1800f74b49b81a359f0199c0fc77096739b14acf86",
+        "hashType": "sha256",
+        "minSdkVersion": 22,
+        "packageName": "com.wilderguard.game.beta",
+        "sig": "0c5d33745cde5f96d7759869cf0bc239",
+        "signer": "f50b3059b4cc987036cc3738ea8b87c3058d00ae3f0f07a51ba80a0555f2e138",
+        "size": 3406849,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 4,
+        "versionName": "0.1.0-beta.4"
+      },
+      {
+        "added": 1793541441000,
+        "apkName": "com.wilderguard.game.beta_3.apk",
+        "hash": "c2206dcf7d206aaab70715212b5afd3fea7268e366bb88d079f2d5d7157eecde",
+        "hashType": "sha256",
+        "minSdkVersion": 22,
+        "packageName": "com.wilderguard.game.beta",
+        "sig": "0c5d33745cde5f96d7759869cf0bc239",
+        "signer": "f50b3059b4cc987036cc3738ea8b87c3058d00ae3f0f07a51ba80a0555f2e138",
+        "size": 3406849,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 3,
+        "versionName": "0.1.0-beta.3"
+      },
+      {
+        "added": 1793529451000,
+        "apkName": "com.wilderguard.game.beta_2.apk",
+        "hash": "8168b78ecfecb76248ef3b4b6bfcc1c6948dc28f52b1ad44d9b7724612985d4d",
+        "hashType": "sha256",
+        "minSdkVersion": 22,
+        "packageName": "com.wilderguard.game.beta",
+        "sig": "0c5d33745cde5f96d7759869cf0bc239",
+        "signer": "f50b3059b4cc987036cc3738ea8b87c3058d00ae3f0f07a51ba80a0555f2e138",
+        "size": 3406849,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 2,
+        "versionName": "0.1.0-beta.2"
+      },
+      {
+        "added": 1793441043000,
+        "apkName": "com.wilderguard.game.beta_1.apk",
+        "hash": "17a2f6e1bc08e065b4addeac48a80aeb6be1d3ca0d64de38cb7b7f58d0a09876",
+        "hashType": "sha256",
+        "minSdkVersion": 22,
+        "packageName": "com.wilderguard.game.beta",
+        "sig": "0c5d33745cde5f96d7759869cf0bc239",
+        "signer": "f50b3059b4cc987036cc3738ea8b87c3058d00ae3f0f07a51ba80a0555f2e138",
+        "size": 3271407,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "com.wilderguard.game.beta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1,
+        "versionName": "0.1.0-beta.1"
+      }
+    ],
+    "io.github.sivivatu.batterymonitor": [
+      {
+        "added": 1793976677000,
+        "apkName": "io.github.sivivatu.batterymonitor_6.apk",
+        "hash": "c92add54be10cf1386ce7b146ef9566c4587ed17f370cae561e922aacb0a0489",
+        "hashType": "sha256",
+        "minSdkVersion": 34,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi-v7a",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "io.github.sivivatu.batterymonitor",
+        "sig": "71664a896365b1eaa0232ff7d439abff",
+        "signer": "d524168decc8c4c1fa779dc1a0ad5dd5a3882ccd4500e8cee0504328d481bc57",
+        "size": 15460516,
+        "targetSdkVersion": 37,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.DUMP",
+            null
+          ],
+          [
+            "android.permission.BATTERY_STATS",
+            null
+          ],
+          [
+            "android.permission.PACKAGE_USAGE_STATS",
+            null
+          ],
+          [
+            "android.permission.QUERY_ALL_PACKAGES",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "io.github.sivivatu.batterymonitor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ],
+          [
+            "moe.shizuku.manager.permission.API_V23",
+            null
+          ],
+          [
+            "android.permission.WRITE_EXTERNAL_STORAGE",
+            null
+          ],
+          [
+            "android.permission.READ_PHONE_STATE",
+            null
+          ],
+          [
+            "android.permission.READ_EXTERNAL_STORAGE",
+            null
+          ]
+        ],
+        "versionCode": 6,
+        "versionName": "0.1.0-beta.4"
+      },
+      {
+        "added": 1793788243000,
+        "apkName": "io.github.sivivatu.batterymonitor_5.apk",
+        "hash": "e23fbbb5a710a38106835bdbcb5fa433c674d962696bfe554790d17cb161ef46",
+        "hashType": "sha256",
+        "minSdkVersion": 34,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi-v7a",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "io.github.sivivatu.batterymonitor",
+        "sig": "71664a896365b1eaa0232ff7d439abff",
+        "signer": "d524168decc8c4c1fa779dc1a0ad5dd5a3882ccd4500e8cee0504328d481bc57",
+        "size": 15444132,
+        "targetSdkVersion": 37,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.DUMP",
+            null
+          ],
+          [
+            "android.permission.BATTERY_STATS",
+            null
+          ],
+          [
+            "android.permission.PACKAGE_USAGE_STATS",
+            null
+          ],
+          [
+            "android.permission.QUERY_ALL_PACKAGES",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "io.github.sivivatu.batterymonitor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ],
+          [
+            "moe.shizuku.manager.permission.API_V23",
+            null
+          ],
+          [
+            "android.permission.WRITE_EXTERNAL_STORAGE",
+            null
+          ],
+          [
+            "android.permission.READ_PHONE_STATE",
+            null
+          ],
+          [
+            "android.permission.READ_EXTERNAL_STORAGE",
+            null
+          ]
+        ],
+        "versionCode": 5,
+        "versionName": "0.1.0-beta.3"
+      },
+      {
+        "added": 1793312484000,
+        "apkName": "io.github.sivivatu.batterymonitor_2.apk",
+        "hash": "a8184b7fd570cbea73a1ceb9ee64530e4a57e8063b85da6423aacde1317f1bed",
+        "hashType": "sha256",
+        "minSdkVersion": 34,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi-v7a",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "io.github.sivivatu.batterymonitor",
+        "sig": "71664a896365b1eaa0232ff7d439abff",
+        "signer": "d524168decc8c4c1fa779dc1a0ad5dd5a3882ccd4500e8cee0504328d481bc57",
+        "size": 2904879,
+        "targetSdkVersion": 37,
+        "uses-permission": [
+          [
+            "android.permission.DUMP",
+            null
+          ],
+          [
+            "android.permission.BATTERY_STATS",
+            null
+          ],
+          [
+            "android.permission.PACKAGE_USAGE_STATS",
+            null
+          ],
+          [
+            "android.permission.QUERY_ALL_PACKAGES",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "io.github.sivivatu.batterymonitor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ],
+          [
+            "moe.shizuku.manager.permission.API_V23",
+            null
+          ]
+        ],
+        "versionCode": 2,
+        "versionName": "0.1.0-beta.1"
+      }
+    ]
+  }
+}
