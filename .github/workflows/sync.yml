@@ -1,0 +1,98 @@
+name: Validate and publish shared F-Droid repository
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 5 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: shared-fdroid-publication
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --require-hashes -r requirements.txt
+      - run: python -m pip install coverage==7.13.4
+      - run: python -m coverage run --source=sync -m unittest discover -s tests -v
+      - run: python -m coverage report --fail-under=80
+  publish:
+    needs: validate
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    environment:
+      name: fdroid-release
+      url: https://sivivatu.github.io/fdroid/
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5
+        with:
+          distribution: temurin
+          java-version: 21
+      - uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407 # v3
+        with:
+          packages: build-tools;36.1.0
+      - run: python -m pip install --require-hashes -r requirements.txt
+      - name: Load immutable public history
+        run: |
+          set -euo pipefail
+          state="$RUNNER_TEMP/fdroid-state"
+          git init "$state"
+          git -C "$state" remote add origin "$GITHUB_WORKSPACE"
+          if git show-ref --verify --quiet refs/remotes/origin/publication; then
+            git -C "$state" fetch origin refs/remotes/origin/publication
+            git -C "$state" checkout -b publication FETCH_HEAD
+          else
+            test -z "$(git ls-remote --heads origin publication)"
+            git -C "$state" checkout --orphan publication
+          fi
+      - name: Import, authenticate and sign complete feed
+        env:
+          FDROID_KEYSTORE_BASE64: ${{ secrets.FDROID_KEYSTORE_BASE64 }}
+          FDROID_KEYSTORE_PASSWORD: ${{ secrets.FDROID_KEYSTORE_PASSWORD }}
+          FDROID_KEY_ALIAS: ${{ secrets.FDROID_KEY_ALIAS }}
+          FDROID_KEY_PASSWORD: ${{ secrets.FDROID_KEY_PASSWORD }}
+        run: |
+          set -euo pipefail
+          umask 077
+          python sync.py --state "$RUNNER_TEMP/fdroid-state" --output "$RUNNER_TEMP/fdroid-public"
+      - name: Commit validated public snapshot
+        run: |
+          set -euo pipefail
+          state="$RUNNER_TEMP/fdroid-state"
+          rsync -a --delete --exclude=.git "$RUNNER_TEMP/fdroid-public/" "$state/"
+          git -C "$state" config user.name 'github-actions[bot]'
+          git -C "$state" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$state" add -- repo index.html .nojekyll release-manifest.json
+          if ! git -C "$state" diff --cached --quiet; then
+            git -C "$state" commit -m 'chore(fdroid): sync authenticated app releases'
+          fi
+          git fetch "$state" publication
+          git push origin FETCH_HEAD:refs/heads/publication
+      - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: ${{ runner.temp }}/fdroid-public
+      - uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+      - name: Verify served signatures and every APK
+        run: python sync.py --verify https://sivivatu.github.io/fdroid --expected-manifest "$RUNNER_TEMP/fdroid-public/release-manifest.json"

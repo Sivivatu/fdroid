@@ -1,0 +1,19 @@
+{
+  "repoSha256": "133465e78e767c9691c06786f8c286144ef43cbf5a2565d0285ab4cbfb072a1b",
+  "apps": [
+    {
+      "package": "io.github.sivivatu.batterymonitor",
+      "name": "Battery Monitor Beta",
+      "feed": "https://sivivatu.github.io/battery-monitor/fdroid/beta/repo",
+      "repoSha256": "133465e78e767c9691c06786f8c286144ef43cbf5a2565d0285ab4cbfb072a1b",
+      "apkSha256": "d524168decc8c4c1fa779dc1a0ad5dd5a3882ccd4500e8cee0504328d481bc57"
+    },
+    {
+      "package": "com.wilderguard.game.beta",
+      "name": "Wilderguard Beta",
+      "feed": "https://sivivatu.github.io/wilderguard-beta/fdroid/repo",
+      "repoSha256": "735b7ca461138a88e3527161e32f5a0461bf03e28e4115743f0d4b026ed51295",
+      "apkSha256": "f50b3059b4cc987036cc3738ea8b87c3058d00ae3f0f07a51ba80a0555f2e138"
+    }
+  ]
+}
